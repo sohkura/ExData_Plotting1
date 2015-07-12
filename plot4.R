@@ -31,7 +31,7 @@ plot(sub$V2, sub$V7, type = "n", ylab = "Energy sub metering", xlab = "")
 with(sub, lines(V2, V7, col = "black"))
 with(sub, lines(V2, V8, col = "red"))
 with(sub, lines(V2, V9, col = "blue"))
-legend("topright", pch = c(NA,NA, NA), lty = c(1,1,1), col = c("black", "red", "blue"), 
+legend("topright", pch = c(NA,NA, NA), lty = c(1,1,1), bty = "n", col = c("black", "red", "blue"), 
        legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
 
 # plot the graph to the screen (1,2) for Voltage (V5)
@@ -48,7 +48,7 @@ plot(sub$V2, sub$V7, type = "n", ylab = "Energy sub metering", xlab = "")
 with(sub, lines(V2, V7, col = "black"))
 with(sub, lines(V2, V8, col = "red"))
 with(sub, lines(V2, V9, col = "blue"))
-legend("topright", pch = c(NA,NA, NA), lty = c(1,1,1), col = c("black", "red", "blue"), 
+legend("topright", pch = c(NA,NA, NA), lty = c(1,1,1), bty = "n", col = c("black", "red", "blue"), 
        legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
 plot(sub$V2, sub$V5, type = "l", ylab = "Voltage", xlab = "datetime")
 plot(sub$V2, sub$V4, type = "l", ylab = "Global_reactive_power", xlab = "datetime")
